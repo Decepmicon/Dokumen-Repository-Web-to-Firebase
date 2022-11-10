@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <input type="text" data-input="nama">
+    <input type="number" data-input="umur">
+    <button type="button" data-button="kirim" >
+        Submit
+    </button>
+
+    <br/>
+    <br/>
+    <input type="text" data-input="nama_update" placeholder="mau diganti apa">
+    <input type="number" data-input="umur_update" placeholder="mau diganti apa">
+    <button type="button" data-button="update" >
+        update
+    </button>
+
+    <br/>
+    <br/>
+    <button type="button" data-button="delete" >
+        delete
+    </button>
+
+    <br/>
+    <br/>
+    <div data-output="showdata"></div>
+
+    <br/>
+    <br/>
+    <input type="text" data-input="nama_search">
+    <button type="button" data-button="search" >
+        search
+    </button>
+    <p id="umur_search"></p>
+
+    <br/>
+    <br/>
+    <table>
+        <thead>
+            <th>username</th>
+            <th>age</th>
+        </thead>
+        <tbody id ="tbody1">
+
+        </tbody>
+    </table>
+
+    <br/>
+    <br/>
+    <p>Search & Update</p>
+    <input type="text" data-input="nama_search_update" placeholder="cari nama">
+    <input type="text" data-input="nama_search_update_input" placeholder="mau diganti apa">
+    <button type="button" data-button="searchUpdate" >
+        update
+    </button>
+    <div data-output="statusUpdate"></div>
+
+    <br/>
+    <br/>
+    <p>Search & Delete</p>
+    <input type="text" data-input="nama_search_delete">
+    <button type="button" data-button="searchDelete" >
+        delete
+    </button>
+    <div data-output="statusDelete"></div>
+    
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="firebase-config.js"></script>
+<script src='main.js'></script>
+
+</html>
+
